@@ -1,0 +1,42 @@
+<extend name="./empty" />
+
+<block name="main-right">
+
+	<ol class="breadcrumb">
+		<li><a href="javascript:void(0)">用户管理</a></li>
+		<li><a href="javascript:void(0)">体温测量</a></li>
+	</ol>
+
+	<table class="table table-responsive table-bordered text-left" style="margin-top:-10px;">
+		<thead>
+			<tr>
+				<th style="line-height: 30px;" class="text-center">测量时间</th>
+				<th style="line-height: 30px;" class="text-center">体温</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			<foreach name="list" item="value">
+				<tr>
+					<td style="width: 400px; line-height: 30px;" class="text-center"><?php echo date('Y-m-d H:i:s', $value['created_at']); ?></td>
+					<td><span class="label label-info">{$value['temperature']} 度</span></td>
+				</tr>
+			</foreach>
+
+		</tbody>
+	</table>
+	
+	<div class="pull-right" style="margin-bottom: 20px;">
+		<button type="button" class="btn btn-danger btn-sm" onclick="close_all()">返回列表</button>
+	</div>
+</block>
+
+<block name="javascript">
+<script type="text/javascript">
+
+function close_all() {
+	parent.layer.closeAll();
+}
+
+</script>
+</block>

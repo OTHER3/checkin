@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>门店后台</title>
+<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
+
+<block name="style">
+</block>
+
+</head>
+<body>
+
+<div id="top">
+    <div id="top-title">
+        <img src="__PUBLIC__/images/inventory.png" alt="门店">
+        <span>门店</span>
+    </div>
+
+    <div id="top-list">
+        <ul class="list-unstyled">
+            <li class="<?php if($nav_name == 'index') echo 'top-list-selected'; ?>"><a href="{:U('Index/index')}"><img src="__PUBLIC__/images/goods_list.png"> 设置</a></li>
+            <li class="<?php if($nav_name == 'staff') echo 'top-list-selected'; ?>"><a href="{:U('Staff/lists')}"><img src="__PUBLIC__/images/goods_list.png"> 员工列表</a></li>
+            <li class="<?php if($nav_name == 'guest') echo 'top-list-selected'; ?>"><a href="{:U('Guest/lists')}"><img src="__PUBLIC__/images/user.png"> 访客列表</a></li>
+            <li class="<?php if($nav_name == 'logout') echo 'top-list-selected'; ?>" onclick="logout()"><a href="javascript:void(0)"><img src="__PUBLIC__/images/exit.png"> 退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top:10px;">
+
+    <block name="main-right">
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0)">首页</a></li>
+        </ol>
+    </block>
+
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/layer-v3.0.1/layer.js"></script>
+
+<block name="javascript">
+</block>
+<script type="text/javascript">
+
+function download(that){
+
+    layer.load(0, {
+        shade: [0.2],
+    });
+
+    setTimeout(function(){
+        layer.closeAll();
+    }, 3000);
+}
+
+function logout(){
+	$.ajax({
+		url: "{:U('Login/logout')}",
+		type: "post",
+		data: {},
+		dataType: 'json',
+		success: function(json){
+			if(json.status == 0){
+				layer.msg(json.message, {icon: 2});
+				return false;
+			}
+			layer.msg(json.message, {icon: 1});
+			setTimeout(function(){
+				location.reload();
+			}, 2000);
+		}
+	});
+}
+
+</script>
+</body>
+</html>

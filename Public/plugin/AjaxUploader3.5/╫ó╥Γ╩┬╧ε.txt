@@ -1,0 +1,12 @@
+注意事项：(针对PHP)
+
+注意：配置单个分片超过2M，会造成后台找不到临时文件。
+原因：后台配置默认最大2M
+解决方法：需要修改php.ini对应的配置：(按自己需要修改，如下：)
+
+file_uploads = on			是否允许通过HTTP上传文件的开关。默认为ON
+upload_max_filesize = 2m	允许上传文件大小的最大值。默认为2M
+max_execution_time = 30		每个PHP页面运行的最大时间值(秒)，默认30秒
+max_input_time = 60			每个PHP页面接收数据所需的最大时间，默认60秒
+memory_limit = 8m			每个PHP页面所吃掉的最大内存，默认8M
+post_max_size = 8m			默认为8M

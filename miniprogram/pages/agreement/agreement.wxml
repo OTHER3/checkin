@@ -1,0 +1,8 @@
+<view class="body">
+  <view class="content">
+    <view class="text">
+      <import src="../../wxParse/wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:text.nodes}}"/>
+    </view>
+  </view>
+</view>

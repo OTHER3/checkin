@@ -1,0 +1,51 @@
+.user_info {
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 34rpx;
+}
+
+.user_info :first-child {
+  display: flex;
+  margin-left: 3%;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_info :nth-child(2) {
+  margin-left: 8%;
+}
+
+.user_info :last-child {
+  position: absolute;
+  display: flex;
+  width: 150rpx;
+  height: 52rpx;
+  align-items: center;
+  justify-content: center;
+  margin-left: 76%;
+  background-color: orange;
+  color: white;
+  border-radius: 10rpx;
+}
+
+.list {
+  margin-top: 10rpx;
+  display: flex;
+  height: 40rpx;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight:bold;
+  width: 90%;
+  padding: 5%;
+}
+
+.list :last-child {
+  width: 40rpx;
+}

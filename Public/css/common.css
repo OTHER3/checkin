@@ -1,0 +1,75 @@
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+#top {
+	height: 50px;
+	width: 100%;
+	background: #2f3847;
+	color:#ffffff;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+#top-title {
+	display: block;
+	position: absolute;
+	width: 199px;
+}
+#top-title img {
+	display: block;
+	float: left;
+	margin-top: 9px;
+    margin-left: 15px;
+}
+#top-title span {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 10px;
+	font-size: 20px;
+}
+#top-list {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 199px;
+}
+#top-list ul {
+	padding-left: 1px;
+}
+#top-list ul li{
+	display: inline-block;
+	float: left;
+	line-height: 50px;
+    margin-right: 3px;
+    padding: 0 10px;
+    width: 130px;
+	text-align: center;
+}
+#top-list ul .top-list-selected {
+	background: #242c37;
+}
+#top-list ul .top-list-selected a {
+	color: #ffb800;
+}
+#top-list ul .top-list-selected a:hover {
+	color: #ffb800;
+}
+#top-list ul li a {
+	text-decoration: none;
+	display: block;
+	font-size: 14px;
+	color: #ccc;
+}
+#top-list ul li:hover {
+	background: #242c37;
+}
+#top-list ul li a:hover {
+	color: #ffb800;
+	text-decoration: none;
+}

@@ -1,0 +1,22 @@
+﻿说明：1、主菜单的data-list属性对应左侧下拉菜单的data-list
+	  2、要打开tab窗口，只需要对标签添加class="tab-btn"和data-url="要打开的页面链接" 两个属性
+	  3、tab-iframe在plugin文件夹有完整示例(只使用了bootstrap简单样式)
+	  4、层级说明：(z-index)
+	  		#top:2
+	  		#left:1
+	  		#right:0
+admin5.3：
+	1.加入tab-iframe多标签插件
+	2.待解决问题：主菜单和左侧导航菜单联动、在tab-iframe弹窗受是否受父窗口限制(受限制)
+	3.跨域问题是否存在
+	4.每个页面对应一个css文件
+	5.左侧下拉菜单待美化
+	6.加入layer3.0.1
+
+admin5.4：
+	1、加入刷新恢复历史打开的tab标签功能，用localstorage记录打开的tab标签，刷新的时候读取进行恢复
+admin5.7：
+	1、可支持设置为单标签，更新当前页标题
+	2、刷新自动打开原页面
+	3、点击主导航直接打开页面
+	

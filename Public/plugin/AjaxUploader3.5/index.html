@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/AjaxUpload.css" />
+<title>AjaxUpload文件上传插件</title>
+</head>
+<body>
+
+
+<div id="upload">
+	<input type="file" class="file" name="file" />
+	<span class="filename"></span>
+	<span class="addfile">添加文件</span>
+	<span class="submit">开始上传</span>
+	<span class="status">0%</span>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/AjaxUpload.js"></script>
+
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+
+	var fileObj = null;
+
+	//添加上传文件
+	$(".addfile").click(function() {
+
+		//清空文件域
+		fileObj = null;
+		var fileInput = $('input[type=file]');
+		$(fileInput).after($(fileInput).clone().val(''));  
+    	$(fileInput).remove();
+
+		//触发点击文件域
+    	$('input[type=file]').click();
+
+		//清空文件名
+		$('.filename').text('');
+		//初始化进度
+		$('.status').text('0%');
+
+	});
+
+	//获取文件名进行显示
+	$(document).on('change', '.file', function(){
+		//获取并显示文件名
+		fileObj = $('input[type=file]')[0].files[0];
+		$('.filename').text(fileObj.name);
+	});
+
+	//点击上传按钮
+	$('.submit').click(function(){
+		//检查是否已添加文件
+		if(fileObj === null){
+			alert('请先添加文件再点击上传！');
+			//清空文件名
+			$('.filename').text('');
+			//初始化进度
+			$('.status').text('0%');
+			return false;
+		}
+
+		//执行分片上传
+		AjaxUpload.init(fileObj);
+		//防止重复点击
+		fileObj = null;
+	});
+
+});
+
+</script>
+
+
+</body>
+</html>

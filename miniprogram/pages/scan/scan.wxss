@@ -1,0 +1,12 @@
+.scan {
+  display: flex;
+  margin-left: 15%;
+  width: 70%;
+  background-color: orange;
+  height: 100rpx;
+  margin-top: 70%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  color: white;
+}

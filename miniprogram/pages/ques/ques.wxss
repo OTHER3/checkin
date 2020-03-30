@@ -1,0 +1,127 @@
+.userInfo {
+  width: 94%;
+  background-color: white;
+  margin-left: 3%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.margin {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.shop_name {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.input {
+  margin-top: 10rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+text {
+  font-size: 30rpx;
+}
+
+radio .wx-radio-input{
+  width: 40rpx;
+  height: 40rpx;
+} 
+
+.radios {
+  display: flex;
+}
+
+.margin_top {
+  margin-top: 4%;
+}
+
+.border_bottom {
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.submit {
+  width: 94%;
+  margin-top: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+}
+.submit1 {
+  width: 94%;
+  margin-top: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+  margin-left: 3%;
+}
+
+.prom {
+  display: flex;
+  color: red;
+}
+
+radio .wx-radio-input.wx-radio-input-checked{
+  border: 2rpx solid #63B8FF;
+  background: white;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before{
+  border-radius: 50%;
+  width: 30rpx; 
+  height: 30rpx; 
+  text-align: center;
+  font-size:0rpx; 
+  background-color: #63B8FF;
+}
+radio .wx-radio-input{
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 36rpx;
+  height: 36rpx;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #63B8FF;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.agree {
+  display: flex;
+}
+.agree :last-child {
+  text-decoration:underline;
+}

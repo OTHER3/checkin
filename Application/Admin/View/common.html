@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>管理后台</title>
+<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/css/common.css" />
+
+<block name="style">
+</block>
+
+</head>
+<body>
+
+<div id="top">
+    <div id="top-title">
+        <img src="__PUBLIC__/images/inventory.png" alt="管理后台">
+        <span>管理后台</span>
+    </div>
+
+    <div id="top-list">
+        <ul class="list-unstyled">
+            <li class="<?php if($nav_name == 'user') echo 'top-list-selected'; ?>"><a href="{:U('User/lists')}"><img src="__PUBLIC__/images/goods_list.png"> 用户列表</a></li>
+            <li class="<?php if($nav_name == 'shop') echo 'top-list-selected'; ?>"><a href="{:U('Shop/lists')}"><img src="__PUBLIC__/images/user.png"> 门店管理</a></li>
+            <?php if($admin_type == 2): ?>
+            <li class="<?php if($nav_name == 'account') echo 'top-list-selected'; ?>"><a href="{:U('Account/lists')}"><img src="__PUBLIC__/images/user.png"> 账号管理</a></li>
+            <!-- <li class="<?php if($nav_name == 'download') echo 'top-list-selected'; ?>" onclick="download(this)"><a href="{:U('Backup/index')}"><img src="__PUBLIC__/images/inventory_collect.png"> 备份数据</a></li> -->
+            <?php endif; ?>
+            <li class="<?php if($nav_name == 'logout') echo 'top-list-selected'; ?>" onclick="logout()"><a href="javascript:void(0)"><img src="__PUBLIC__/images/exit.png"> 退出</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top:10px;">
+
+    <block name="main-right">
+        <ol class="breadcrumb">
+            <li><a href="javascript:void(0)">首页</a></li>
+        </ol>
+    </block>
+
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/layer-v3.0.1/layer.js"></script>
+
+<block name="javascript">
+</block>
+<script type="text/javascript">
+
+function download(that){
+
+    layer.load(0, {
+        shade: [0.2],
+    });
+
+    setTimeout(function(){
+        layer.closeAll();
+    }, 3000);
+}
+
+function logout(){
+	$.ajax({
+		url: "{:U('Login/logout')}",
+		type: "post",
+		data: {},
+		dataType: 'json',
+		success: function(json){
+			if(json.status == 0){
+				layer.msg(json.message, {icon: 2});
+				return false;
+			}
+			layer.msg(json.message, {icon: 1});
+			setTimeout(function(){
+				location.reload();
+			}, 2000);
+		}
+	});
+}
+
+</script>
+</body>
+</html>
