@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/scan/scan",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/ques/ques",
+    "pages/temperature/temperature"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

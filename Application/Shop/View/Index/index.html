@@ -1,0 +1,116 @@
+<extend name="./common" />
+
+<block name="main-right">
+
+	<ol class="breadcrumb">
+		<li><a href="javascript:void(0)">门店管理</a></li>
+		<li><a href="javascript:void(0)">设置</a></li>
+	</ol>
+
+	<table class="table table-responsive text-left" style="margin-top:-10px;">
+		<tbody>
+			<tr>
+				<td style="line-height: 30px; width: 200px;" class="text-right">门店名称：</td>
+				<td>
+					<span class="label label-primary">{$detail['shop_name']}</span>
+				</td>
+			</tr>
+			<tr>
+				<td style="line-height: 30px; width: 200px;" class="text-right">帐号：</td>
+				<td>
+					<span class="label label-primary">{$detail['account']}</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="text-center">
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+								<img src="{$detail['qr_staff']}" alt="...">
+								<div class="caption">
+									<p>
+										<a href="{$detail['qr_staff']}" download="员工二维码.png" class="btn btn-primary">员工二维码下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<div class="thumbnail">
+								<img src="{$detail['qr_guest']}" alt="...">
+								<div class="caption">
+									<p>
+										<a href="{$detail['qr_guest']}" download="访客二维码.png" class="btn btn-success">访客二维码下载</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 
+	<div class="pull-right">
+		<a href="{:U('Account/lists')}" class="btn btn-danger btn-sm">返回列表</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-success btn-sm" onclick="save_account(this)">确认保存</button>
+	</div> -->
+</block>
+
+<block name="javascript">
+	<script type="text/javascript">
+
+		//保存
+		function save_account(that) {
+			$(that).attr('disabled', true);
+
+			var data = {};
+			data.account = $.trim($('input[name=account]').val());
+			data.shop_name = $.trim($('input[name=shop_name]').val());
+			data.password = $.trim($('input[name=password]').val());
+			data.user_type = $.trim($('select[name=type] option:selected').val());
+			console.log(data);
+
+			if (data.account == '') {
+				layer.msg('请输入帐号！', { icon: 2 });
+				$(that).attr('disabled', false);
+				return false;
+			}
+			if (data.shop_name == '') {
+				layer.msg('请输入门店名称！', { icon: 2 });
+				$(that).attr('disabled', false);
+				return false;
+			}
+			if (data.password == '') {
+				layer.msg('请输入用户密码！', { icon: 2 });
+				$(that).attr('disabled', false);
+				return false;
+			}
+			if (data.user_type == '') {
+				layer.msg("请选择用户类型！");
+				$(that).attr('disabled', false);
+				return false;
+			}
+
+			$.ajax({
+				url: "{:U('Account/save')}",
+				type: 'post',
+				data: data,
+				dataType: 'json',
+				success: function (json) {
+					$(that).attr('disabled', false);
+					if (json.status == 0) {
+						layer.msg(json.message, { icon: 2 });
+						return false;
+					}
+					layer.msg(json.message, { icon: 1 });
+					setTimeout(function () {
+						location.reload();
+					}, 2000);
+				}
+			});
+
+		}
+
+	</script>
+</block>

@@ -1,0 +1,198 @@
+<extend name="./common" />
+
+<block name="main-right">
+
+	<!-- <ol class="breadcrumb">
+		<li><a href="javascript:void(0)">首页</a></li>
+		<li><a href="javascript:void(0)">门店管理</a></li>
+		<li><a href="javascript:void(0)">门店列表</a></li>
+	</ol> -->
+
+	<form action="{:U('User/lists')}" name="search" method="get" class="form-inline">
+		<div class="form-group">
+			<input name="name" class="form-control" id="name" placeholder="姓名" value="{$name}">
+		</div>
+		&nbsp;&nbsp;
+		<div class="form-group">
+			<input name="mobile" class="form-control" id="mobile" placeholder="电话" value="{$mobile}">
+		</div>
+		&nbsp;&nbsp;
+		<div class="form-group">
+			<input name="id_card" class="form-control" id="id_card" placeholder="身份证号码" value="{$id_card}">
+		</div>
+		&nbsp;&nbsp;
+		<!-- <div class="form-group">
+			<input name="shop_name" class="form-control" id="shop_name" placeholder="所属酒吧" value="{$shop_name}">
+		</div>
+		&nbsp;&nbsp; -->
+
+		<button type="submit" class="btn btn-primary">搜索</button>
+	</form>
+
+	<div style="margin-top:15px;"></div>
+
+	<table class="table table-responsive table-bordered text-center table-hover">
+		<thead>		
+			<tr>
+				<th class="text-center" style="width:100px;">序号</th>
+				<!-- <th class="text-center">所属门店</th> -->
+				<th class="text-center">姓名</th>
+				<th class="text-center">状态</th>
+				<th class="text-center">年龄</th>
+				<th class="text-center">性别</th>
+				<th class="text-center">手机号码</th>
+				<th class="text-center">身份证号码</th>
+				<th class="text-center">登记时间</th>
+				<th class="text-center">体温测量</th>
+				<th class="text-center" style="width:200px;">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php foreach($list as $key => $value): ?>
+			<tr>
+				<td>{$value['id']}</td>	
+				<!-- <td>{$value['shop_name']}</td>	 -->
+				<td>{$value['name']}</td>	
+				<td>
+					<if condition="$value['status'] eq 1">
+						<span class="label label-success">正常</span>
+					<else />
+						<span class="label label-danger">已离职</span>
+					</if>
+				</td>	
+				<td>{$value['age']}</td>	
+				<td><?php echo $value['sex'] == 1 ? '男' : '女'; ?></td>
+				<td>{$value['mobile']}</td>	
+				<td>{$value['id_card']}</td>
+				<td><?php echo date('Y-m-d H:i:s', $value['created_at']); ?></td>
+				<td><span onclick="temperature({$value['id']})" class="btn btn-primary btn-sm">查看</span></td>
+				<td>
+					<span onclick="edit({$value['id']})" class="btn btn-success btn-sm">详情</span>
+					&nbsp;&nbsp;
+					<if condition="$value['status'] eq 1">
+						<span onclick="switch_status({$value['id']}, 2)" class="btn btn-warning btn-sm">离职</span>
+					<else />
+						<span onclick="switch_status({$value['id']}, 1)" class="btn btn-warning btn-sm">恢复</span>
+					</if>
+					&nbsp;&nbsp;
+					<span onclick="delete_account({$value['id']})" class="btn btn-danger btn-sm">删除</span>
+				</td>
+			</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+
+	{$page}
+
+</block>
+
+<block name="javascript">
+<script type="text/javascript">
+function temperature(user_id) {
+	//iframe窗
+	layer.open({
+		type: 2,
+		title: '详情',
+		shadeClose: true,
+		shade: false,
+		maxmin: true, //开启最大化最小化按钮
+		area: ['893px', '600px'],
+		content: "{:U('Staff/temperature')}" + "?user_id=" + user_id
+	});
+}
+
+function edit(staff_id) {
+	//iframe窗
+	layer.open({
+		type: 2,
+		title: '详情',
+		shadeClose: true,
+		shade: false,
+		maxmin: true, //开启最大化最小化按钮
+		area: ['893px', '600px'],
+		content: "{:U('Staff/edit')}" + "?staff_id=" + staff_id
+	});
+}
+
+//用户状态
+function switch_status(user_id, status){
+	if (status == 1) {
+		text = '您确认要恢复员工为正常状态吗?';
+	} else {
+		text = '您确认要将员工设置为离职状态吗?';
+	}
+
+	//询问框
+	layer.confirm(text, {
+		btn: ['确定', '取消'] //按钮
+	}, function () {
+
+		layer.closeAll();
+		if(user_id == ''){
+			layer.msg('用户id获取失败！请刷新后重试！', {icon: 2});
+			return false;
+		}
+
+		$.ajax({
+			url: "{:U('Staff/switch')}",
+			type: 'post',
+			data: {
+				user_id: user_id,
+				status: status,
+			},
+			dataType: 'json',
+			success: function(json){
+				if(json.status == 0){
+					layer.msg(json.message, {icon: 2});
+					return false;
+				}
+				layer.msg(json.message, {icon: 1});
+				setTimeout(function(){
+					location.reload();
+				}, 2000);
+			}
+		});
+	},function(){
+
+	});
+}
+
+//删除物品
+function delete_account(id){
+
+	//询问框
+	layer.confirm('您确认要删除此记录吗？', {
+		btn: ['确定', '取消'] //按钮
+	}, function () {
+
+		layer.closeAll();
+		if(id == ''){
+			layer.msg('id获取失败！请刷新后重试！', {icon: 2});
+			return false;
+		}
+
+		$.ajax({
+			url: "{:U('Staff/delete')}",
+			type: 'post',
+			data: {
+				id: id,
+			},
+			dataType: 'json',
+			success: function(json){
+				if(json.status == 0){
+					layer.msg(json.message, {icon: 2});
+					return false;
+				}
+				layer.msg(json.message, {icon: 1});
+				setTimeout(function(){
+					location.reload();
+				}, 2000);
+			}
+		});
+	},function(){
+
+	});
+}
+
+</script>
+</block>

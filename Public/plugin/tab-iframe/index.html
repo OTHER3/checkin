@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>tab-iframe</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/tab-iframe.css">
+</head>
+<body>
+
+<!--bootstrap只用了简单的样式，可以不需要bootstrap-->
+
+<div id="demo"><!-- 打开tab的节点，带上class="tab-btn"和：data-url="链接地址"即可 -->
+
+	<a href="javascript: void(0);" class="btn btn-sm btn-primary tab-btn" data-url="http://127.0.0.1/">本地网站</a>
+	<a href="javascript: void(0);" class="btn btn-sm btn-primary tab-btn" data-url="http://tool.lu/">在线工具</a>
+	<a href="javascript: void(0);" class="btn btn-sm btn-primary tab-btn" data-url="http://www.bootcss.com/">bootstrap</a>
+	<a href="javascript: void(0);" class="btn btn-sm btn-primary tab-btn" data-url="http://layer.layui.com/">layer</a>
+
+</div>
+
+<div id="page">
+
+	<div id="tab-title">
+		<ul class="list-unstyled">
+			<li class="tab-default active">默认页面</li>
+		</ul>
+	</div>
+
+	<div id="tab-content"><!-- 内容，注意：此容器要按照自己的页面去设置宽高，需要自适应可用绝对定位实现 -->
+	
+		<div class="tab-iframe tab-default active">	<!-- 默认显示 -->
+			<iframe class="iframe" src='https://zhidao.baidu.com/'></iframe>
+		</div>
+
+	</div>
+
+</div>
+
+
+<script language="javascript" src="./js/jquery-1.11.2.min.js"></script>
+<script language="javascript" src="./js/bootstrap.min.js"></script>
+<script language="javascript" src="./js/html5_localstorage.js"></script>
+<script language="javascript" src="./js/tab-iframe.js"></script>
+
+</body>
+</html>

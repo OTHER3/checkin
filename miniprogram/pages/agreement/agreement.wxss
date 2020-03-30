@@ -1,0 +1,24 @@
+@import "../../wxParse/wxParse/wxParse.wxss";
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  font-size: 34rpx;
+}
+
+.text {
+  margin-top: 30rpx;
+  padding-bottom: 70rpx;
+}
+
+.content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.body {
+  width: 94%;
+  background-color: white;
+  margin-left: 3%;
+}

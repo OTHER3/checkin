@@ -1,0 +1,93 @@
+<extend name="./common" />
+
+<block name="main-right">
+
+	<ol class="breadcrumb">
+		<li><a href="javascript:void(0)">账号管理</a></li>
+		<li><a href="javascript:void(0)">添加账号</a></li>
+	</ol>
+
+	<table class="table table-responsive table-bordered text-left" style="margin-top:-10px;">
+		<tbody>
+			<tr>
+				<td style="line-height: 30px; width: 200px;" class="text-right">帐号：</td>
+				<td><input type="text" name="account" class="form-control input-md"></td>
+				<td style="line-height: 30px; width: 60px;" class="text-center"><span class="label label-success">必填</span></td>
+			</tr>
+			<tr>
+				<td style="line-height: 30px;" class="text-right">密码：</td>
+				<td><input type="text" name="password" class="form-control input-md"></td>
+				<td style="line-height: 30px; width: 60px;" class="text-center"><span class="label label-success">必填</span></td>
+			</tr>
+			<tr>
+				<td style="line-height: 30px;" class="text-right">用户类型：</td>
+				<td>
+					<select name="type" class="form-control input-md">
+					<?php foreach($user_type_list as $key => $value): ?>
+						<option value="{$key}">{$value}</option>
+					<?php endforeach; ?>
+					</select>
+				</td>
+				<td style="line-height: 30px; width: 60px;" class="text-center"><span class="label label-success">必填</span></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="pull-right">
+		<a href="{:U('Account/lists')}" class="btn btn-danger btn-sm">返回列表</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-success btn-sm" onclick="save_account(this)">确认保存</button>
+	</div>
+</block>
+
+<block name="javascript">
+<script type="text/javascript">
+
+//保存
+function save_account(that){
+	$(that).attr('disabled', true);
+
+	var data = {};
+	data.account = $.trim($('input[name=account]').val());
+	data.password = $.trim($('input[name=password]').val());
+	data.user_type = $.trim($('select[name=type] option:selected').val());
+	console.log(data);
+
+	if(data.account == ''){
+		layer.msg('请输入帐号！', {icon: 2});
+		$(that).attr('disabled', false);
+		return false;
+	}
+	if(data.password == ''){
+		layer.msg('请输入用户密码！', {icon: 2});
+		$(that).attr('disabled', false);
+		return false;
+	}
+	if(data.user_type == ''){
+		layer.msg("请选择用户类型！");
+		$(that).attr('disabled', false);
+		return false;
+	}
+
+	$.ajax({
+		url: "{:U('Account/save')}",
+		type: 'post',
+		data: data,
+		dataType: 'json',
+		success: function(json){
+			$(that).attr('disabled', false);
+			if(json.status == 0){
+				layer.msg(json.message, {icon: 2});
+				return false;
+			}
+			layer.msg(json.message, {icon: 1});
+			setTimeout(function(){
+				location.reload();
+			}, 2000);
+		}
+	});
+
+}
+
+</script>
+</block>

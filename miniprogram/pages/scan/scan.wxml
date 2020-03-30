@@ -1,0 +1,3 @@
+<view>
+  <view class="scan" bindtap="scan">点我扫码答卷</view>
+</view> 

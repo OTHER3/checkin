@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/scan/scan",
+    "pages/agreement/agreement",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/ques/ques",
+    "pages/temperature/temperature"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

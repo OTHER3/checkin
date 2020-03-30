@@ -1,0 +1,49 @@
+<view>
+  <form bindsubmit="sub">
+  <!-- 上面的用户信息部分开始 -->
+  <view class="userInfo">
+    <view class="margin shop_name">{{shop_name}}酒吧出入登记</view>
+      <view class="margin input name">姓　名:　<input value="{{visit.name}}" name="name" disabled="{{ unEdit }}"></input></view>
+      <view class="margin input">年　龄:　<input value="{{visit.age}}" name="age" disabled="{{ unEdit }}"></input></view>
+      <view class="margin input">性　别:　
+        <radio-group class="radio-group" name="sex">
+          <radio class="radio" value="1" checked="{{visit.sex == 1 ? true : false}}" disabled="{{ unEdit }}">男　</radio>
+          <radio class="radio" value="2" checked="{{visit.sex == 2 ? true : false}}" disabled="{{ unEdit }}">女</radio>
+        </radio-group>
+      </view>
+      <view class="margin input">手机号:　<input value="{{visit.mobile}}" name="mobile" disabled="{{ unEdit }}"></input></view>
+      <view class="margin input">身份证:　<input value="{{visit.id_card}}" name="id_card" disabled="{{ unEdit }}"></input></view>
+    </view>
+  <!-- 上面的用户信息结束 -->
+  <!-- 下面的选择信息开始 -->
+    <view class="userInfo margin_top">
+      <view class="margin">
+        <view wx:for="{{visit.topic}}" key="key">
+          <view wx:if="{{item.topic_type == 1}}">
+            <view class="margin_top">{{item.title}}</view>
+            <view class="radios margin_top">
+              <radio-group class="radio-group" name="topic_{{item.id}}">
+                <radio class="radio" wx:for="{{item.option}}" wx:for-item="option" value="{{option.index}}" checked="{{option.index == item.answer ? true : false}}" disabled="{{ unEdit }}">{{option.value}}　</radio>
+              </radio-group>
+            </view>
+          </view>
+          <!-- <view wx:if="{{item.topic_type == 2}}">id：{{item.id}}多选</view> -->
+          <view wx:if="{{item.topic_type == 3}}">
+            <view class="margin_top">{{item.title}}</view>
+            <view class="margin_top border_bottom"><input name="topic_{{item.id}}" disabled="{{ unEdit }}"></input></view>
+          </view>
+        </view>
+        <view class="prom margin_top">
+          <checkbox-group bindchange="prom">
+            <checkbox checked="{{unEdit ? true : false }}" disabled="{{ unEdit }}" value="true"></checkbox>
+          </checkbox-group>
+          <view>本人承诺，以上内容属实，若有不实导致疫情扩散，愿意承担相应法律责任</view>
+        </view>
+      </view>
+    </view>
+    <!-- 选择信息结束 -->
+    <view class="submit1" wx:if="{{ type == 2 && unEdit }}">您的信息已提交</view>
+    <view class="submit1" wx:if="{{ type == 1 && unEdit }}">已提交</view>
+    <button form-type="submit" class="submit" wx:if="{{ !unEdit }}">提交</button>
+  </form>
+</view>

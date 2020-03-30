@@ -1,0 +1,16 @@
+<view>
+  <view class="user_info">
+    <image src='../../image/default.jpg' mode='widthFix'></image>
+    <view>{{name}}</view>
+    <view wx:if="{{type == 1}}">访客</view>
+    <view wx:if="{{type == 2}}">员工</view>
+  </view>
+  <view class="list" bindtap="gotoQues">
+  <view>出入登记</view>
+  <view>></view>
+  </view>
+  <view class="list" bindtap="gotoTemp" wx:if="{{ type == 2 }}">
+    <view>体温测量</view>
+    <view>></view>
+  </view>
+</view>
