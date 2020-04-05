@@ -131,6 +131,7 @@ class LoginController extends Controller
         $data['mobile'] = I('mobile', '', 'trim');
         $data['address'] = I('address', '', 'trim');
         $data['business_license'] = I('business_license', '', 'trim');
+        $data['status'] = ShopService::STATUS_NORMAL;
         $data['creator_id'] = 0;
         $data['created_at'] = time();
         $data['updated_at'] = time();
@@ -184,7 +185,7 @@ class LoginController extends Controller
             $this->ajaxReturn($return);
         }
         
-        $return['message'] = '注册成功, 等待后台审核！';
+        $return['message'] = '注册成功！';
         $return['status'] = 1;
         $this->ajaxReturn($return);
     }

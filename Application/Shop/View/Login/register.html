@@ -5,11 +5,12 @@
 	<title>注册页面</title>
 	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/login.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/plugin/AjaxUploader3.5/css/AjaxUpload.css" />
 	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 
-<div id="login" style="width: 650px;margin: -300px 0 20px -325px;">
+<div id="login" style="width: 800px;margin: -300px 0 20px -400px;">
 	<div id="login-header" >
 		<div class="space"></div>
 		<div class="login-img"></div>
@@ -53,7 +54,18 @@
 					</tr>
 					<tr>
 						<td style="line-height: 30px; width: 200px;" class="text-right">营业执照图片：</td>
-						<td><input type="text" name="business_license" class="form-control input-md"></td>
+						<td>
+							<div id="upload">
+								<input type="file" class="file" name="file" />
+								<span class="filename"></span>
+								<span class="addfile">添加文件</span>
+								<span class="submit">开始上传</span>
+								<span class="status">0%</span>
+							</div>
+							<div class="clearfix"></div>
+							<img id="show_image" style="display: none;margin-top: 10px;" src="" alt="" width="200" height="100">
+							<input type="hidden" name="business_license" class="form-control input-md">
+						</td>
 						<td style="line-height: 30px; width: 60px;" class="text-center"><span class="label label-success">必填</span></td>
 					</tr>
 				</tbody>
@@ -69,7 +81,63 @@
 </div>
 
 <script type="text/javascript" src="__PUBLIC__/plugin/layer-v3.0.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/plugin/AjaxUploader3.5/js/AjaxUpload.js"></script>
 <script>
+
+$(function () {
+
+	var fileObj = null;
+	//添加上传文件
+	$(".addfile").click(function () {
+		//清空文件域
+		fileObj = null;
+		var fileInput = $('input[type=file]');
+		$(fileInput).after($(fileInput).clone().val(''));
+		$(fileInput).remove();
+
+		//触发点击文件域
+		$('input[type=file]').click();
+		//清空文件名
+		$('.filename').text('');
+		//初始化进度
+		$('.status').text('0%');
+	});
+
+	//获取文件名进行显示
+	$(document).on('change', '.file', function () {
+		//获取并显示文件名
+		fileObj = $('input[type=file]')[0].files[0];
+		$('.filename').text(fileObj.name);
+	});
+
+	//点击上传按钮
+	$('.submit').click(function () {
+		//检查是否已添加文件
+		if (fileObj === null) {
+			alert('请先添加文件再点击上传！');
+			//清空文件名
+			$('.filename').text('');
+			//初始化进度
+			$('.status').text('0%');
+			return false;
+		}
+
+		//执行分片上传
+		AjaxUpload.uploadURL = "{:U('UploadFile/upload')}";
+		AjaxUpload.mergeURL = "{:U('UploadFile/upload')}";
+		AjaxUpload.init(fileObj);
+		//防止重复点击
+		fileObj = null;
+	});
+});
+
+//上传回调
+function upload_callback(file)
+{
+	$('input[name=business_license]').val(file.file_path);
+	$('#show_image').attr('src', file.static + file.file_path).show();
+	return true;
+}
 
 function doRegister(that){
 	$(that).attr('disabled', true);
