@@ -36,7 +36,7 @@ class LoginService
             }
             $open_id = $result['openid'];
             //step3 检查用户是否已存入数据库中，无则新增用户数据
-            $one = $this->model->find(['open_id' => $open_id]);
+            $one = $this->model->where(['open_id' => $open_id])->find();
             if (empty($one)) {
                 $data = [
                     'type' => UserModel::TYPE_VISITOR, //默认为访客

@@ -20,7 +20,7 @@
       <view class="margin">
         <view wx:for="{{visit.topic}}" key="key">
           <view wx:if="{{item.topic_type == 1}}">
-            <view class="margin_top">{{item.title}}</view>
+            <view class="margin_top">{{index + 1}}. {{item.title}}</view>
             <view class="radios margin_top">
               <radio-group class="radio-group" name="topic_{{item.id}}">
                 <radio class="radio" wx:for="{{item.option}}" wx:for-item="option" value="{{option.index}}" checked="{{option.index == item.answer ? true : false}}" disabled="{{ unEdit }}">{{option.value}}　</radio>
@@ -29,8 +29,8 @@
           </view>
           <!-- <view wx:if="{{item.topic_type == 2}}">id：{{item.id}}多选</view> -->
           <view wx:if="{{item.topic_type == 3}}">
-            <view class="margin_top">{{item.title}}</view>
-            <view class="margin_top border_bottom"><input name="topic_{{item.id}}" disabled="{{ unEdit }}"></input></view>
+            <view class="margin_top">{{index + 1}}. {{item.title}}</view>
+            <view class="margin_top border_bottom"><input name="topic_{{item.id}}" disabled="{{ unEdit }}" style="width:100%;"></input></view>
           </view>
         </view>
         <view class="prom margin_top">
@@ -54,5 +54,6 @@
     <view class="submit1" wx:if="{{ type == 2 && unEdit }}">您的信息已提交</view>
     <view class="submit1" wx:if="{{ type == 1 && unEdit }}">已提交</view>
     <button form-type="submit" class="submit" wx:if="{{ !unEdit }}">提交</button>
+    <view class="margin-bottom"></view>
   </form>
 </view>

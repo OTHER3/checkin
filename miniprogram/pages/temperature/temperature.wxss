@@ -1,9 +1,9 @@
 .tab {
   display: flex;
   height: 80rpx;
-  width: 70%;
-  padding-left: 15%;
-  padding-right: 15%;
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
   background-color: white;
   justify-content: space-between;
   align-items: center;
@@ -14,9 +14,9 @@
 .list {
   display: flex;
   height: 70rpx;
-  width: 77%;
-  padding-left: 10%;
-  padding-right: 13%;
+  width: 66%;
+  padding-left: 12%;
+  padding-right: 22%;
   background-color: white;
   justify-content: space-between;
   align-items: center;
