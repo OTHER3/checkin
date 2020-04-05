@@ -99,7 +99,9 @@ class LoginController extends Controller
     }
 
     public function logout(){
-        session(null);
+        session('shop_id', null);
+        session('shop_account', null);
+
         $return['status'] = 1;
         $return['message'] = '退出成功';
         $this->ajaxReturn($return);
