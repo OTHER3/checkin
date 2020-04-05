@@ -83,7 +83,10 @@ class LoginController extends Controller
     }
 
     public function logout(){
-        session(null);
+        session('admin_id', null);
+        session('admin_type', null);
+        session('admin_name', null);
+
         $return['status'] = 1;
         $return['message'] = '退出成功';
         $this->ajaxReturn($return);
