@@ -1,0 +1,513 @@
+[ 2020-04-05T10:19:09+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=033Nt14Z0AekMX1XTe2Z0i0b4Z0Nt14t
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2020-04-05T10:19:45+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=033lwS661VuicR1aSi761jx5761lwS6-
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2020-04-05T10:20:30+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043dN8Gb2wj5EL0exEEb2WATFb2dN8Gz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2020-04-05T10:21:12+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=023yPkdf1HQU7u016odf1Ypkdf1yPkd8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+
+[ 2020-04-05T10:22:49+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043KwkXA0B4s5j2whiWA0q5tXA0KwkXV
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ²»ÖªµÀÕâÑùµÄÖ÷»ú¡£ 
+
+[ 2020-04-05T10:23:28+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043mzKiZ16BCQU0KhehZ1hwMiZ1mzKiA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2020-04-05T10:23:42+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=033vlzD62BD5HP0me8B62b8HD62vlzD0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+ERR: SQLSTATE[HY000] [1044] Access denied for user 'ques'@'localhost' to database 'http://ques.dd01.work'
+
+[ 2020-04-05T10:24:38+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043sGcO416QBXP1Y8gQ41nmcO41sGcOC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0532s ]
+
+[ 2020-04-05T10:24:58+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=023fiopx0UFC5f1zQlnx0Noxpx0fiopT
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+
+[ 2020-04-05T10:30:13+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043ZdtIY1KE8tV05s8HY1rUJIY1ZdtIz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0023s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2020-04-05T10:30:16+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2020-04-05T10:32:52+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=023ErW9h03VPCu1Hul9h0HK0ah0ErW9t
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0025s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2020-04-05T10:32:54+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:33:34+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0554s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:33:34+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0646s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2020-04-05T10:33:35+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0011s ]
+
+[ 2020-04-05T10:34:34+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=0230nLDG0MgAGf2BiPCG0KIODG00nLD8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0052s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2020-04-05T10:34:37+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:34:38+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:34:38+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2020-04-05T10:34:39+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0010s ]
+
+[ 2020-04-05T10:35:22+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043IYb7V0jXMuZ1Rk35V0ZTY6V0IYb7h
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0021s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-04-05T10:35:24+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:35:25+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:35:25+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-04-05T10:35:26+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:36:54+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043hOgJb20CezK0ZRcHb2Gx6Jb2hOgJ8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2020-04-05T10:36:57+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:36:58+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:36:58+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:36:59+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0007s ]
+
+[ 2020-04-05T10:37:26+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=023AA1Lw19ixSf0nxTLw1Rr1Lw1AA1LF
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0022s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2020-04-05T10:37:28+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:37:30+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:37:30+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-04-05T10:37:30+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0006s ]
+
+[ 2020-04-05T10:37:47+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=033Hw3RY0GWNyX1QDGOY0SMbRY0Hw3Rq
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0022s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2020-04-05T10:37:50+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2020-04-05T10:37:51+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:37:51+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2020-04-05T10:37:51+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0007s ]
+
+[ 2020-04-05T10:38:35+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=033hz4Sq0wqE2l1lqRRq0IckSq0hz4Sk
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2020-04-05T10:38:38+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:38:39+08:00 ] 127.0.0.1 /index.php/Weixin/Shop/getShopName?shop_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `shop` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `shop` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2020-04-05T10:38:39+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/userTopic?shop_id=2&ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `visit_log` WHERE `user_id` = 3 AND `shop_id` = 2 AND `created_at` BETWEEN 1586016000 AND 1586102399 ORDER BY id desc LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:38:40+08:00 ] 127.0.0.1 /index.php/Weixin/VisitLog/getTopic?ques_id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `topic` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `visit_log` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `topic` WHERE `ques_id` = 0 ORDER BY id asc  [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:43:07+08:00 ] 127.0.0.1 /index.php/Weixin/Login/getSession?code=043jyAmj1QoNws0z9pmj1EhOmj1jyAmC
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given E:\phpstudy_pro\WWW\checkin\Application\Weixin\Common\function.php ç¬¬ 52 è¡Œ.
+SQL: SELECT * FROM `user` LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-04-05T10:43:11+08:00 ] 127.0.0.1 /index.php/Weixin/User/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+

@@ -24,6 +24,10 @@
   border-bottom: 1rpx solid gainsboro;
 }
 
+input {
+  width: 80%;
+}
+
 text {
   font-size: 30rpx;
 }
@@ -54,7 +58,6 @@ radio .wx-radio-input{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40rpx;
   font-size: 30rpx;
   height: 80rpx;
 }
@@ -67,10 +70,13 @@ radio .wx-radio-input{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40rpx;
   font-size: 30rpx;
   height: 80rpx;
   margin-left: 3%;
+}
+
+.margin-bottom {
+  height: 40rpx;
 }
 
 .prom {
