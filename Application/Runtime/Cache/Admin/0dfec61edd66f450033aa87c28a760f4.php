@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>登录后台</title>
-	<link rel="stylesheet" type="text/css" href="http://ques.dd01.work/Public/css/login.css"/>
-	<script type="text/javascript" src="http://ques.dd01.work/Public/js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="http://ques.dd01.work/Public/js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://checkin.dd01.work/Public/css/login.css"/>
+	<script type="text/javascript" src="http://checkin.dd01.work/Public/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://checkin.dd01.work/Public/js/login.js"></script>
 </head>
 <body>
 
@@ -46,7 +46,7 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="http://ques.dd01.work/Public/plugin/layer-v3.0.1/layer.js"></script>
+<script type="text/javascript" src="http://checkin.dd01.work/Public/plugin/layer-v3.0.1/layer.js"></script>
 <script>
 
 function login(that){
