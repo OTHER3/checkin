@@ -144,6 +144,12 @@ class VisitLogService
     {
         $results = [];
         $needle = 'topic_';
+
+        //填写地址特殊处理，后续干掉
+        if (empty($param[$needle . '2']) && empty($param[$needle . '3'])) {
+            throw new \Exception('请填写详细的国家或地区');
+        }
+
         foreach ($param as $key => $value) {
             if (strpos($key, $needle) !== false) {
                 $index = substr($key, strlen($needle));

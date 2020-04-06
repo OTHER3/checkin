@@ -6,7 +6,7 @@ module.exports = {
     baseApi : "https://www.shalloon.cn/index.php/Weixin/",
   },
   Test: {
-    baseApi : "http://ques.dd01.work/index.php/Weixin/",
+    baseApi : "http://checkin.dd01.work/index.php/Weixin/",
   },
   Prod: {
     baseApi : "",
