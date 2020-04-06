@@ -18,7 +18,6 @@ Page({
   onLoad: function (options) {
     var that = this;
     App.doLogin().then((value) => {
-      console.log(value);
       that.setData({
         type: store.getItem("type"),
         shop_id: store.getItem("userInfo").shop_id,
@@ -99,7 +98,6 @@ Page({
     var that = this;
     wx.scanCode({
       onlyFromCamera: true,
-      scanType: ["barCode", "qrCode", "datamatrix", "pdf417"],
       success: (res) => {
         if (res.path == undefined) {
           that.unUse();
