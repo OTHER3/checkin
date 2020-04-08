@@ -184,7 +184,7 @@ class StaffController extends AuthController
                 'shop_id' => 0,
                 'type' => UserService::TYPE_GUEST,
             ];
-            $result = $this->UserModel->where(['id' => $user_id])->save(['status' => $status]);
+            $result = $this->UserModel->where(['id' => $user_id])->save($update_data);
             if (!$result) {
                 throw new \Exception("修改失败!");
             }
