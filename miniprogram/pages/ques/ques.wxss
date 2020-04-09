@@ -25,7 +25,7 @@
 }
 
 input {
-  width: 80%;
+  width: 78%;
 }
 
 text {
@@ -130,4 +130,64 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
 }
 .agree :last-child {
   text-decoration:underline;
+}
+
+.confirm {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top:0;
+  background:rgba(0,0,0,0.5);
+}
+
+.confirm-body {
+  position: fixed;
+  width: 80%;
+  margin-left: 10%;
+  top: 20%;
+  height: 60%;
+  background-color: white;
+  z-index: 100;
+}
+
+.confirm-first {
+  background-color: green;
+  color: white;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90rpx;
+}
+
+.confirm-content {
+  height: 60%;
+  padding: 5%;
+  font-size: 34rpx;
+}
+
+.confirm-content view {
+  margin-bottom: 10rpx;
+}
+
+.confirm-content :nth-child(3) {
+  color: green;
+}
+
+.confirm-content :nth-child(4) {
+  color: red;
+}
+
+.confirm-content :nth-child(5) {
+  color: red;
+  font-size: 40rpx;
+}
+
+.confirm-last {
+  background-color: green;
+  height: 15%;  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
