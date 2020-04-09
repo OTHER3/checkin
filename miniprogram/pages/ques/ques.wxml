@@ -57,8 +57,8 @@
     <view class="margin-bottom"></view>
   </form>
 </view>
-<view class="confirm" bindtap="confirm" wx:if="{{switch_confirm}}"></view>
-<view class="confirm-body" wx:if="{{switch_confirm}}">
+<view class="confirm" bindtap="confirm" wx:if="{{switch_confirm}}" catchtouchmove="true"></view>
+<view class="confirm-body" wx:if="{{switch_confirm}}" catchtouchmove="true">
   <view class="confirm-first">允许通行</view>
   <view class="confirm-content">
     <view>姓名：{{visit.name}}</view>

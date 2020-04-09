@@ -180,7 +180,7 @@ class StaffController extends AuthController
             }
 
             $update_data = [
-                'status' => $status,
+//                'status' => $status,
                 'shop_id' => 0,
                 'type' => UserService::TYPE_GUEST,
             ];
