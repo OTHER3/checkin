@@ -138,6 +138,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
   width: 100%;
   top:0;
   background:rgba(0,0,0,0.5);
+  z-index: 100;
 }
 
 .confirm-body {
@@ -153,11 +154,11 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
 .confirm-first {
   background-color: green;
   color: white;
-  height: 30%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 90rpx;
+  font-size: 84rpx;
 }
 
 .confirm-content {
