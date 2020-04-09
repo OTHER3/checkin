@@ -59,8 +59,9 @@ Page({
                 type: 2,
                 shop_id: options.shop_id,
               })
-              //跳转到答卷
-              router.push("ques", { query: { shop_id: options.shop_id, ques_id: options.ques_id } })
+              console.log(store.getItem("type"))
+              //跳转到用户中心
+              router.push("user")
             })
             return
           }

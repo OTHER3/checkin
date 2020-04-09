@@ -258,6 +258,8 @@ class VisitLogService
             }
 
             $log['topic'] = $topic;
+            $log['created_at'] = date('Y-m-d H:i:s', $log['created_at']);
+            $log['updated_at'] = date('Y-m-d H:i:s', $log['updated_at']);
         }
 
         return $log;

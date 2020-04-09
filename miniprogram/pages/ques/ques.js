@@ -20,9 +20,11 @@ Page({
       mobile: '',
       id_card: '',
       topic: [],
+      created_at:'',
     },
     prom: false,
     agree: false,
+    switch_confirm: false,
   },
 
   /**
@@ -31,6 +33,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     that.setData({
+      type: store.getItem("type"),
       shop_id: options.shop_id,
       ques_id: options.ques_id,
     })
@@ -61,12 +64,18 @@ Page({
         visit.mobile = value.mobile;
         visit.id_card = value.id_card;
         visit.topic = value.topic;
+        visit.created_at = value.created_at;
         unEdit = true;
         //将展示的内容填入
         that.setData({
           visit: visit,
           unEdit: unEdit,//控制是否可以编辑
         })
+        if (that.data.type == 1) {//访客身份需弹框
+          that.setData({
+            switch_confirm: true
+          })
+        }
       } else {
         //没有，则获取问卷列表信息
         var param = {
@@ -126,5 +135,10 @@ Page({
   },
   gotoAgreement:function() {
     router.push("agreement")
+  },
+  confirm:function() {
+    this.setData({
+      switch_confirm: false
+    })
   }
 })

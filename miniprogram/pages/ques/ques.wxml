@@ -57,3 +57,15 @@
     <view class="margin-bottom"></view>
   </form>
 </view>
+<view class="confirm" bindtap="confirm" wx:if="{{switch_confirm}}"></view>
+<view class="confirm-body" wx:if="{{switch_confirm}}">
+  <view class="confirm-first">允许通行</view>
+  <view class="confirm-content">
+    <view>姓名：{{visit.name}}</view>
+    <view>电话：{{visit.mobile}}</view>
+    <view>进出方向：进</view>
+    <view>身体状况：健康</view>
+    <view>{{visit.created_at}}</view>
+  </view>
+  <view class="confirm-last" bindtap="confirm">确定</view>
+</view>
