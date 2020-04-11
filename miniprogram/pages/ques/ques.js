@@ -71,7 +71,8 @@ Page({
           visit: visit,
           unEdit: unEdit,//控制是否可以编辑
         })
-        if (that.data.type == 1) {//访客身份需弹框
+        //访客身份需弹框
+        if (that.data.type == 1 || that.data.shop_id != store.getItem("userInfo").shop_id) {
           that.setData({
             switch_confirm: true
           })
