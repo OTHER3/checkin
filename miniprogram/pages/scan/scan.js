@@ -10,6 +10,7 @@ Page({
   data: {
     type: store.getItem("type"),
     shop_id: store.getItem("userInfo").shop_id,
+    visit_jump: false,
   },
 
   /**
@@ -21,6 +22,7 @@ Page({
       that.setData({
         type: store.getItem("type"),
         shop_id: store.getItem("userInfo").shop_id,
+        visit_jump: value.visit_jump
       })
       var scene = decodeURIComponent(options.scene);
       if (scene != undefined && scene.split("#").length == 3) {
@@ -88,10 +90,14 @@ Page({
 
       /**
        * 2 判断无扫码参数进入时,判断用户是否是员工
-       *   是员工，跳转至page/user/user,访客停留在当前页面
+       *   是员工，跳转至page/user/user,访客跳转至门店id为1的问卷
        */
       if (that.data.type == 2) {
         router.push("user")
+      }
+
+      if (that.data.visit_jump && that.data.type == 1) {
+        router.push("ques", { query: { shop_id: 1, ques_id: 0 } })
       }
     }
   },

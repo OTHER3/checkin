@@ -56,6 +56,8 @@ class LoginService
                 $data = $one;
             }
 
+            $data['visit_jump'] = true;//控制小程序访客默认是否跳转到门店为1的问卷
+
             //step4 返回用户相关信息
             return $data;
         } catch (\Exception $e) {
